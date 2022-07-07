@@ -886,12 +886,13 @@ footer .content .top {
 }
 
 .top .media-icons a:nth-child(5) {
-    background: rgb(15, 15, 216);
+    background: #fff;
+    color: black;
 }
 
 .top .media-icons a:nth-child(5):hover {
-    color: black;
-    background: #fff;
+       color: #fff;
+    background: rgba(0, 0, 255, 0.808);
 }
 
 footer .content .link-boxes {
