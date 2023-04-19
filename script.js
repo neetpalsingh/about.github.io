@@ -35,15 +35,15 @@ $(document).ready(function() {
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Front End Developer", "Back End Developer", "AI Engineer", "Data Scientist", "Freelancer"],
+        strings: ["Data Scientst","ML Engineer", "Data Analyst", "AI Engineer","Data Engineer" ,"Tableau Expert"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["C , C++ Programming", "Python", "R prgramming", "Orcale", "Android Studio", "My SQL", "HTML", "CSS", "Angular Javascript", "Bootstrap", "Freelancer"],
-        typeSpeed: 100,
+        strings: ["Predictive Analysis","A/B Testing","Deep Learning","Reporting & Dashboard Creation","SQL Query","Advance Excel","VBA, Macros & Pivot Table","C & C++ Programming","Python","Numpy", "Pandas", "Scipy", "Matplotlib", "Seaborn", "SciKit Learn", "Tensorflow", "Open_CV","NLTK"],
+        typeSpeed: 150,
         backSpeed: 60,
         loop: true
     });
