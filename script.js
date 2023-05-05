@@ -61,16 +61,16 @@ $(document).ready(function() {
                 items: 1,
                 nav: false
             },
-            300: {
-                items: 2,
+            500: {
+                items:1,
                 nav: false
             },
             600: {
-                items: 3,
+                items: 2,
                 nav: false
             },
             1000: {
-                items: 4,
+                items: 3,
                 nav: false
             },
         },
