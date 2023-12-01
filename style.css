@@ -39,7 +39,7 @@ section {
 }
 
 .max-width {
-    max-width: 1100px;
+    max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
@@ -1716,7 +1716,7 @@ input.email-form:focus {
 }
 
 
-/* welcone message stylling */
+/* welcome message stylling */
 
 .welcome-box {
     border-radius: 0;
