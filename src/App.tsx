@@ -5,6 +5,7 @@ import McpServer from './components/McpServer'
 import UseCases from './components/UseCases'
 import Projects from './components/Projects'
 import { About, Experience, Skills } from './components/Sections'
+import { Credentials, Contact, Footer } from './components/Closing'
 
 export default function App() {
   return (
@@ -19,7 +20,10 @@ export default function App() {
         <UseCases />
         <Projects />
         <Skills />
+        <Credentials />
+        <Contact />
       </main>
+      <Footer />
     </>
   )
 }
