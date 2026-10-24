@@ -1,20 +1,18 @@
 // Hiring-request emails are sent straight from the browser (no backend).
 //
-// Default: FormSubmit (https://formsubmit.co), which needs no account or keys. The first
-// submission emails `toEmail` an activation link; click it once and every
-// request after that lands in the inbox.
+// Primary: EmailJS, which sends the custom HTML template in
+// email-templates/hiring-request.html (plus the auto-reply in
+// email-templates/auto-reply.html, configured in the EmailJS dashboard).
+// These are PUBLIC identifiers, safe to commit; Gmail credentials stay inside EmailJS.
 //
-// Optional upgrade: fill in the EmailJS IDs below to send the custom HTML
-// template in email-templates/hiring-request.html instead. These are PUBLIC
-// identifiers, safe to commit; Gmail credentials stay inside EmailJS.
+// Fallback: FormSubmit (https://formsubmit.co) is used only if the EmailJS IDs are emptied.
 export const emailConfig = {
-  serviceId: '', // e.g. 'service_abc123'  (Email Services → your Gmail service)
-  templateId: '', // e.g. 'template_xyz789' (Email Templates → hiring request)
-  publicKey: '', // e.g. 'AbCdEf123456'     (Account → General → Public Key)
+  serviceId: 'service_k3wf2hw', // Email Services → Gmail service
+  templateId: 'template_uz6re2s', // Email Templates → hiring request
+  publicKey: '7sXB1Pm3h2phOy5EtlgiW', // Account → General → Public Key
   toEmail: 'neetpalsingh750@gmail.com',
-  // After activating FormSubmit you may swap the address for the random alias
-  // it gives you (e.g. 'a1b2c3d4e5...') to keep the email out of the page source.
-  formSubmitTarget: 'neetpalsingh750@gmail.com',
+  // FormSubmit alias for neetpalsingh750@gmail.com (keeps the address out of the request URL)
+  formSubmitTarget: '2984b86b09c556f3eef24c44fd4f67f0',
 }
 
 export const emailEnabled = Boolean(emailConfig.serviceId && emailConfig.templateId && emailConfig.publicKey)
