@@ -1,0 +1,108 @@
+<!doctype html>
+<!--
+  EmailJS template for portfolio hiring requests.
+  Paste this whole file into EmailJS → Email Templates → (your template) → Content → "Edit content" → Code editor.
+  Subject:   New hiring request · {{from_name}} from {{company}}
+  To email:  {{to_email}}
+  From name: Portfolio Hiring Request
+  Reply to:  {{reply_to}}
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New hiring request</title>
+</head>
+<body style="margin:0;padding:0;background:#F4F4F4;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#262626;">
+  <div style="display:none;max-height:0;overflow:hidden;">{{from_name}} from {{company}} wants to talk. Phone {{phone}} · {{location}}</div>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F4F4F4;padding:32px 12px;">
+    <tr><td align="center">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#FFFFFF;border:1px solid #E8E8E8;border-radius:14px;overflow:hidden;">
+
+        <!-- Header -->
+        <tr><td style="background:#FA5D19;padding:28px 32px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+            <td style="font-family:'SFMono-Regular',Menlo,Consolas,monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#FFE3D6;">[ Portfolio ] · Hiring request</td>
+            <td align="right" style="font-family:'SFMono-Regular',Menlo,Consolas,monospace;font-size:11px;color:#FFE3D6;">NS</td>
+          </tr></table>
+          <h1 style="margin:14px 0 4px;font-size:26px;line-height:1.2;font-weight:600;color:#FFFFFF;letter-spacing:-0.5px;">{{from_name}} wants to hire you</h1>
+          <p style="margin:0;font-size:15px;color:#FFF1EA;">{{company}} · {{location}}</p>
+        </td></tr>
+
+        <!-- Quick actions -->
+        <tr><td style="padding:24px 32px 8px;">
+          <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+            <td style="padding-right:8px;"><a href="mailto:{{from_email}}?subject=Re:%20Your%20hiring%20request" style="display:inline-block;background:#262626;color:#FFFFFF;text-decoration:none;font-size:14px;font-weight:600;padding:11px 18px;border-radius:9px;">Reply by email</a></td>
+            <td><a href="tel:{{phone}}" style="display:inline-block;background:#FFFFFF;color:#262626;text-decoration:none;font-size:14px;font-weight:600;padding:10px 17px;border-radius:9px;border:1px solid #E0E0E0;">Call {{phone}}</a></td>
+          </tr></table>
+        </td></tr>
+
+        <!-- Contact details -->
+        <tr><td style="padding:20px 32px 4px;">
+          <p style="margin:0 0 10px;font-family:'SFMono-Regular',Menlo,Consolas,monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#FA5D19;">■ Contact details</p>
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #EDEDED;border-radius:10px;border-collapse:separate;font-size:14px;">
+            <tr><td style="padding:11px 14px;color:#737373;width:38%;border-bottom:1px solid #F0F0F0;">Name</td><td style="padding:11px 14px;font-weight:600;border-bottom:1px solid #F0F0F0;">{{from_name}}</td></tr>
+            <tr><td style="padding:11px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Email</td><td style="padding:11px 14px;border-bottom:1px solid #F0F0F0;"><a href="mailto:{{from_email}}" style="color:#FA5D19;text-decoration:none;">{{from_email}}</a></td></tr>
+            <tr><td style="padding:11px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Contact number</td><td style="padding:11px 14px;border-bottom:1px solid #F0F0F0;"><a href="tel:{{phone}}" style="color:#262626;text-decoration:none;">{{phone}}</a></td></tr>
+            <tr><td style="padding:11px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Company</td><td style="padding:11px 14px;border-bottom:1px solid #F0F0F0;">{{company}}</td></tr>
+            <tr><td style="padding:11px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Location (entered)</td><td style="padding:11px 14px;border-bottom:1px solid #F0F0F0;">{{location}}</td></tr>
+            <tr><td style="padding:11px 14px;color:#737373;">Role / opportunity</td><td style="padding:11px 14px;">{{role}}</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Message -->
+        <tr><td style="padding:20px 32px 4px;">
+          <p style="margin:0 0 10px;font-family:'SFMono-Regular',Menlo,Consolas,monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#FA5D19;">■ Message</p>
+          <div style="background:#FAFAFA;border-left:3px solid #FA5D19;border-radius:6px;padding:14px 16px;font-size:14px;line-height:1.6;white-space:pre-wrap;">{{message}}</div>
+        </td></tr>
+
+        <!-- Visitor network -->
+        <tr><td style="padding:24px 32px 4px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+            <td style="font-family:'SFMono-Regular',Menlo,Consolas,monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#FA5D19;">■ Visitor network & location</td>
+            <td align="right"><a href="{{ip_map_url}}" style="font-size:12px;color:#262626;text-decoration:none;border:1px solid #E0E0E0;border-radius:6px;padding:5px 9px;">View on map ↗</a></td>
+          </tr></table>
+          <p style="margin:8px 0 10px;font-size:12px;color:#737373;">{{ip_status}}</p>
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #EDEDED;border-radius:10px;border-collapse:separate;font-size:13px;">
+            <tr><td style="padding:9px 14px;color:#737373;width:38%;border-bottom:1px solid #F0F0F0;">IP address</td><td style="padding:9px 14px;font-family:Menlo,Consolas,monospace;border-bottom:1px solid #F0F0F0;">{{ip}} ({{ip_version}})</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Network</td><td style="padding:9px 14px;font-family:Menlo,Consolas,monospace;border-bottom:1px solid #F0F0F0;">{{ip_network}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">City / region</td><td style="padding:9px 14px;border-bottom:1px solid #F0F0F0;">{{ip_city}}, {{ip_region}} ({{ip_region_code}}) · {{ip_postal}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Country</td><td style="padding:9px 14px;border-bottom:1px solid #F0F0F0;">{{ip_country}} ({{ip_country_code}} / {{ip_country_iso3}}) · Capital {{ip_country_capital}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Continent · EU</td><td style="padding:9px 14px;border-bottom:1px solid #F0F0F0;">{{ip_continent}} · in EU: {{ip_in_eu}} · TLD {{ip_country_tld}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Coordinates</td><td style="padding:9px 14px;font-family:Menlo,Consolas,monospace;border-bottom:1px solid #F0F0F0;">{{ip_latitude}}, {{ip_longitude}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Timezone</td><td style="padding:9px 14px;border-bottom:1px solid #F0F0F0;">{{ip_timezone}} (UTC {{ip_utc_offset}})</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">ISP / organization</td><td style="padding:9px 14px;border-bottom:1px solid #F0F0F0;">{{ip_org}} · {{ip_asn}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Calling code · currency</td><td style="padding:9px 14px;border-bottom:1px solid #F0F0F0;">{{ip_calling_code}} · {{ip_currency}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Country area · population</td><td style="padding:9px 14px;border-bottom:1px solid #F0F0F0;">{{ip_country_area}} km² · {{ip_country_population}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;">Languages</td><td style="padding:9px 14px;font-size:12px;color:#525252;">{{ip_languages}}</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Device & submission -->
+        <tr><td style="padding:24px 32px 4px;">
+          <p style="margin:0 0 10px;font-family:'SFMono-Regular',Menlo,Consolas,monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#FA5D19;">■ Device & submission</p>
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #EDEDED;border-radius:10px;border-collapse:separate;font-size:13px;">
+            <tr><td style="padding:9px 14px;color:#737373;width:38%;border-bottom:1px solid #F0F0F0;">Submitted (IST)</td><td style="padding:9px 14px;border-bottom:1px solid #F0F0F0;">{{submitted_at}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Page</td><td style="padding:9px 14px;border-bottom:1px solid #F0F0F0;word-break:break-all;">{{page_url}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Referrer</td><td style="padding:9px 14px;border-bottom:1px solid #F0F0F0;word-break:break-all;">{{referrer}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Browser timezone · language</td><td style="padding:9px 14px;border-bottom:1px solid #F0F0F0;">{{browser_timezone}} · {{browser_language}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;border-bottom:1px solid #F0F0F0;">Platform · screen</td><td style="padding:9px 14px;border-bottom:1px solid #F0F0F0;">{{platform}} · {{screen}}</td></tr>
+            <tr><td style="padding:9px 14px;color:#737373;">User agent</td><td style="padding:9px 14px;font-size:11.5px;color:#525252;word-break:break-all;">{{user_agent}}</td></tr>
+          </table>
+        </td></tr>
+
+        <!-- Raw JSON -->
+        <tr><td style="padding:24px 32px 8px;">
+          <p style="margin:0 0 10px;font-family:'SFMono-Regular',Menlo,Consolas,monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#FA5D19;">■ Raw ipapi.co response</p>
+          <pre style="margin:0;background:#171717;color:#E5E5E5;border-radius:10px;padding:16px;font-family:Menlo,Consolas,monospace;font-size:11.5px;line-height:1.55;white-space:pre-wrap;word-break:break-all;">{{ip_raw_json}}</pre>
+        </td></tr>
+
+        <!-- Footer -->
+        <tr><td style="padding:24px 32px 28px;border-top:1px solid #F0F0F0;">
+          <p style="margin:0;font-size:12px;color:#A3A3A3;">Sent automatically by the hiring form on your portfolio · Neetpal Singh, AI Engineer</p>
+        </td></tr>
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>
